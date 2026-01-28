@@ -621,31 +621,209 @@
     width: 24px;
     height: 24px;
   }
-}
 
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.5rem;
-  }
-
-  .standings-table th,
-  .standings-table td {
-    padding: 8px 4px;
-    font-size: 0.75rem;
-  }
-
-  .legend {
+  .header-container {
+    padding: 15px;
     flex-direction: column;
-    align-items: center;
+  }
+
+  .header-title-section {
+    flex-direction: column;
     gap: 10px;
   }
 
+  .champions-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .update-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tabs-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tab {
+    padding: 12px;
+  }
+
+  .matches-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .champions-container {
+    padding: 8px;
+  }
+
+  .header-container {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .champions-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin: 5px 0;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .last-update {
+    font-size: 0.75rem;
+  }
+
+  .live-indicator {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+  }
+
+  .refresh-btn {
+    padding: 10px;
+    font-size: 0.85rem;
+    width: 100%;
+  }
+
+  .tabs-container {
+    padding: 8px;
+    gap: 6px;
+    flex-direction: column;
+  }
+
+  .tab {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .legend {
+    gap: 8px;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .legend-item {
+    font-size: 0.75rem;
+    padding: 5px;
+  }
+
+  .legend-box {
+    width: 18px;
+    height: 18px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+  }
+
+  .standings-table th {
+    padding: 8px 3px;
+    font-size: 0.7rem;
+  }
+
+  .standings-table td {
+    padding: 8px 3px;
+    font-size: 0.75rem;
+  }
+
+  .position {
+    font-size: 0.85rem;
+  }
+
+  .team-name {
+    padding-left: 5px !important;
+    font-size: 0.8rem;
+  }
+
   .team-crest {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 
   .team-info {
-    gap: 8px;
+    gap: 6px;
+  }
+
+  .points strong {
+    padding: 4px 6px;
+    font-size: 0.9rem;
+    min-width: 28px;
+  }
+
+  .matches-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .match-card {
+    padding: 12px;
+  }
+
+  .match-crest {
+    width: 28px;
+    height: 28px;
+  }
+
+  .match-team {
+    padding: 8px;
+  }
+
+  .match-score {
+    font-size: 1.1rem;
+    padding: 3px 6px;
+    min-width: 32px;
+  }
+
+  .match-team-name {
+    font-size: 0.8rem;
+    flex: 1;
+  }
+
+  .match-date {
+    font-size: 0.8rem;
+  }
+
+  .match-minute {
+    font-size: 0.9rem;
+    padding: 5px;
+    margin-top: 8px;
+  }
+
+  .no-matches {
+    padding: 40px 15px;
+    font-size: 1rem;
+  }
+
+  .loading {
+    padding: 50px 15px;
+  }
+
+  .spinner {
+    width: 45px;
+    height: 45px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #007bff;
+  }
+
+  .error-message {
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+
+  .api-instruction {
+    font-size: 0.8rem;
   }
 }
