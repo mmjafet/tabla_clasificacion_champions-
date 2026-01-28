@@ -1,0 +1,5 @@
+# Proxy para la API de Football Data en producción
+/api/*  https://api.football-data.org/:splat  200
+
+# SPA fallback
+/*  /index.html  200

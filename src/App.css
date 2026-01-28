@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  background: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%),
+    repeating-linear-gradient(
+      0deg,
+      #1a5f1a 0px,
+      #1a5f1a 50px,
+      #156f15 50px,
+      #156f15 100px
+    );
+  padding: 20px;
+  position: relative;
+}
+
+.App::before {
+  content: '⚽';
+  position: fixed;
+  font-size: 200px;
+  opacity: 0.05;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+#root {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
