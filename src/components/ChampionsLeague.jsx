@@ -155,7 +155,7 @@ const ChampionsLeague = () => {
     <div className="champions-container">
       <div className="header-container">
         <div>
-          <h1 className="title">UEFA Champions League 2024-25</h1>
+          <h1 className="title">UEFA Champions League 2025-26</h1>
           <p className="subtitle">Fase de Liga - Clasificación en Vivo</p>
         </div>
         {lastUpdate && (
