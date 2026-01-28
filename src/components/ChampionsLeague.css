@@ -21,6 +21,24 @@
   overflow: hidden;
 }
 
+.header-title-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.champions-logo {
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.2));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
 .header-container::before {
   content: '';
   position: absolute;
@@ -552,6 +570,16 @@
 @media (max-width: 768px) {
   .champions-container {
     padding: 10px;
+  }
+
+  .header-title-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .champions-logo {
+    width: 60px;
+    height: 60px;
   }
 
   .title {
