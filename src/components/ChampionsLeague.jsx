@@ -158,7 +158,7 @@ const ChampionsLeague = () => {
         <div className="header-title-section">
           <img src={championsLogo} alt="UEFA Champions League" className="champions-logo" />
           <div>
-            <h1 className="title">UEFA Champions League 2024-25</h1>
+            <h1 className="title">UEFA Champions League 2025-26</h1>
             <p className="subtitle">Fase de Liga - Clasificación en Vivo</p>
           </div>
         </div>
